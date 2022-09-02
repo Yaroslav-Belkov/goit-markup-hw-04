@@ -17,6 +17,7 @@
   --portfolio-content-color: #757575;
   --soft-color: #212121;
   --border-color-top: #ECECEC;
+  --icons-color: #AFB1B8;
 }
 
 
@@ -50,9 +51,6 @@ img {
 /* Оформлення логотипу */
 .logo {
 text-decoration: none;
-}
-/* Перша частина лого */
-.logo-web {
 font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -61,6 +59,7 @@ font-family: 'Raleway';
 }
 /* Друга частина лого */
 .logo-studio {
+  text-decoration: none;
 font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -173,9 +172,12 @@ color: var(--hover-color);
 }
 
 .svg-contacts {
-  fill: #757575;
+  fill: var(--contacts-color) ;
 }
 
+.svg-icons{
+    margin-right: 10px;
+}
 .svg-contacts:hover{
   fill: var(--hover-color);
 }
@@ -229,9 +231,6 @@ color: var(--hover-color);
     background: var(--button-color);
       color: var(--light-collor);
 }
-
-
-
 
 .button:hover,
 .button:focus {
@@ -338,7 +337,7 @@ color: var(--hover-color);
 }
 .team-item {
   width: 270px;
-  background-color: #FFFFFF;
+  background-color: var(--light-collor);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -386,19 +385,21 @@ font-weight: 500;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  fill: #afb1b8;
+  fill: var(--icons-color);
 }
 
 .social-link-cont:not(:last-child){
   margin-right: 10px;
 }
 
-.href-social-link:hover {
-  fill: #FFFFFF;
+.href-social-link:hover,
+.href-social-link:focus {
+  fill: var(--light-collor);
 }
 
-.href-social-link:hover {
- background-color: #2196F3;
+.href-social-link:hover,
+.href-social-link:focus {
+ background-color: var(--hover-color);
 }
 
 
@@ -409,8 +410,8 @@ font-weight: 500;
   align-items: center;
   width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
-  fill: #AFB1B8;
+  border: 1px solid var(--icons-color);
+  fill: var(--icons-color);
   border-radius: 4px;
 }
 
@@ -428,7 +429,8 @@ font-weight: 500;
 margin-bottom: 50px;
 }
 
-.regular-link:hover {
+.regular-link:hover,
+ .regular-link:focus {
   fill: var(--hover-color);
   border: 1px solid var(--hover-color);
 }
@@ -476,6 +478,48 @@ color: var(--light-collor);
   color: var(--light-collor);
 }
 
+
+.title-footer {
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--light-collor);
+}
+
+.conteiner-adres {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-link {
+  display: flex;
+}
+
+.footer-link{
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.href-footer-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  fill: var(--brand-color-fut);
+  background: rgba(255, 255, 255, 0.1);
+
+}
+
+.href-footer-link:hover,
+.href-footer-link:focus {
+  background: var(--hover-color)
+}
+
+.center-footer {
+  margin-left: 70px;
+}
 /* Portfolio */
 
 .button-filters {
