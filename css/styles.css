@@ -44,6 +44,10 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -145,6 +149,8 @@ font-family: 'Raleway';
 
 /* Контакти сайту */
 .contacts a {
+  display: flex;
+  align-items: center;
     font-weight: 500;
     line-height: 1.14;
     text-decoration: none;
@@ -171,16 +177,12 @@ color: var(--hover-color);
   margin-right: 0;
 }
 
-.svg-contacts {
-  fill: var(--contacts-color) ;
-}
 
 .svg-icons{
     margin-right: 10px;
+    fill: currentColor;
 }
-.svg-contacts:hover{
-  fill: var(--hover-color);
-}
+
 
 .svg-contacts-conteiner {
   display: block;
@@ -368,13 +370,13 @@ font-weight: 500;
 
 .div-team {
   padding-top: 30px;
-  padding-bottom: 16px;
+  padding-bottom: 30px;
 }
 
 .social-link {
   display: flex;
-  padding-right: 32px;
-  padding-left: 32px;
+  justify-content: center;
+  margin-top: -14px;
   margin-bottom: 30px;
 }
 
@@ -394,11 +396,7 @@ font-weight: 500;
 
 .href-social-link:hover,
 .href-social-link:focus {
-  fill: var(--light-collor);
-}
-
-.href-social-link:hover,
-.href-social-link:focus {
+fill: var(--light-collor);
  background-color: var(--hover-color);
 }
 
@@ -495,11 +493,6 @@ color: var(--light-collor);
   display: flex;
 }
 
-.footer-link{
-  display: flex;
-  margin-bottom: 30px;
-}
-
 .href-footer-link {
   display: flex;
   width: 44px;
@@ -539,6 +532,7 @@ color: var(--light-collor);
 .button-filters:focus {
   background-color: var(--button-hover-color);
   color: var(--light-collor);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-border{
@@ -566,7 +560,8 @@ color: var(--light-collor);
   margin-bottom: 0px;
 }
 
-.portfolio-item:hover {
+.portfolio-link:hover,
+.portfolio-link:focus {
   border: 1px solid #EEEEEE;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -583,6 +578,11 @@ color: var(--light-collor);
     line-height: 1.87;
     color: var(--portfolio-content-color);
 
+}
+
+.portfolio-link {
+  display: block;
+  color: var(--soft-color);
 }
 
 .products {
@@ -606,9 +606,6 @@ color: var(--light-collor);
   color: var(--button-hover-color);
 }
 
-.but:hover {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 
 .button-portfolio {
   display: flex;
